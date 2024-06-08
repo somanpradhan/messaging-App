@@ -4,7 +4,7 @@ const simpleGit = require('simple-git');
 
 const FILE_PATH = './data.json';
 
-const DATE = moment().subtract(30, 'd').format(); 
+const DATE = moment().subtract(10, 'd').format(); 
 
 const data = {
     date: DATE
@@ -12,4 +12,4 @@ const data = {
 
 jsonfile.writeFile(FILE_PATH, data);
 
-simpleGit().add([FILE_PATH]).commit(DATE, {'--date': DATE});
+simpleGit().add([FILE_PATH]).commit(DATE, {'--date': DATE}).push();
