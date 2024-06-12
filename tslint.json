@@ -36,8 +36,8 @@
       true,
       {
         "order": [
-          "static-field",
           "instance-field",
+          "static-field",
           "static-method",
           "instance-method"
         ]
